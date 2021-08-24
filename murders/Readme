@@ -1,0 +1,13 @@
+we analyse US gun murders data collected by FBI
+
+download-data.R - downloads csv file to data directory and creates "murders.csv" object
+
+analysis.R- generates a plot and saves it to figs directory.We use ggsave() to save ggplot object into figs folder of our directory.
+
+wrangle-data.R-  created a derived dataset by reading "murders.csv" file from "data" folder  and saves the updated R object in rda folder
+
+As we have checked our present working directory by getwd() and got this as result.
+"/Users/Runjhun/Desktop/R probability/GitHub/Projects/Projects/murders" 
+
+Henceforth, we are using relative path in all our code like {read.csv("data/murders.csv")}
+because our all 3 folders (rda,data,figs) reside in the same directory.
